@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <script src="javascript/all.js" defer></script>
+  <script src="javascript/app.js" defer></script>
+  <script src="javascript/script.js" defer></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Box Sports</title>
+</head>
+
+
+<header>
+  <nav class="navbar">
+    <h1 class="navbar_logo">Box Sports</h1>
+
+    <ul class="navbar_menu">
+      <li class="navbar_item">
+        <a href="index.html">Home</a>
+      </li>
+
+      <li class="navbar_item">
+        <a href="#" class="dropdown">Produtos</a>
+
+        <div class="submenu">
+          <img src="img/menu.png" class="submenu_img">
+          <div class="submenu_itens">
+            <div class="submenu_itens">
+
+              <div class="submenu_item">
+                <p> <img src="img/caixa.png" alt=""></p>
+                <h4><a href="caixas.html">Box disponiveis</a></h4>
+              </div>
+
+              <div class="submenu_item">
+                <p> <img src="img/camisadefutebol.png" alt=""></p>
+                <h4><a href="roupas.html">Camisas de Time</a></h4>
+              </div>
+
+              <div class="submenu_item">
+                <p> <img src="img/futebol.png" alt=""></p>
+                <h4><a href="#">Itens de Futebol</a></h4>
+              </div>
+
+              <div class="submenu_item">
+                <p> <img src="img/tenis.png" alt=""></p>
+                <h4><a href="#">Calçados</a></h4>
+              </div>
+
+              <div class="submenu_item">
+                <p> <img src="img/equipamentos.png" alt=""></p>
+                <h4><a href="">Equipamentos</a></h4>
+              </div>
+
+              <div class="submenu_item">
+                <p> <img src="img/bicicleta.png" alt=""></p>
+                <h4><a href="#">Bicicletas</a></h4>
+              </div>
+            </div>
+      </li>
+
+
+      <li class="navbar_item">
+        <a href="#sobre">Como Funciona?</a>
+      </li>
+      <li class="navbar_item">
+        <a href="#" class="dropdown">Login</a>
+        <div class="submenu">
+          <form class="form">
+            <input type="email" class="form_input" placeholder="Email">
+            <input type="password" class="form_input" placeholder="Senha">
+
+            <button class="form_btn">Entrar</button>
+            <div class="cadastro">
+              <p>Não tem uma conta?<a href="cadastro.html"> cadastre-se</a></p>
+            </div>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+  <main>
+    <section>
+      <div class="separar">
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="img/banner1.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/banner2.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/banner3.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+
+      <div class="row" id="produtos">
+        <div class="column">
+          <div class="card">
+            <h1>Cupom de Desconto Para Caixas</h1>
+            <p class="price">BOX1O</p>
+            <img src="img/caixa.png" alt="">
+          
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h1>Cupom de Desconto Para Itens de Corrida</h1>
+            <p class="price">JGT41</p>
+            <img src="img/tenis.png" alt="">
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h1>Cupom de Desconto Para Itens de Futebol</h1>
+            <p class="price">JHG87</p>
+            <img src="img/futebol.png" alt="">
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h1>Cupom de Desconto Para Itens de Ciclismo</h1>
+            <p class="price">NXL74</p>
+            <img src="img/bicicleta.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="bannerbaixo">
+        <img src="img/bannerbaixo.png" alt="" width="100%">
+      </div>
+    </section>
+
+    <section>
+    <div class="como_funciona" id="sobre">
+
+      <h2>Como Funciona?</h2>
+      <br>
+      <div class="container">
+      <img src="img/card2.png" alt="">
+
+      <p>
+        Para conseguir ter acesso as caixas,
+        você vai precisar fazer o seu cadastro, 
+        onde irá responder um questionário sobre:
+        seu esporte favorito, se pratica, tamanho
+        de camisa, etc.
+        <br>
+        <br>
+        Após fazer seu cadastro escolha seu plano (mini, media, premium) e você recebera sua caixa em um semana.
+      </p>   
+    </div>     
+  </div>
+    </section>
+  </main>
+</body>
+
+
+<footer class="main_footer containeer">
+  
+  <div class="content">
+      
+      <div class="colfooter">
+          
+          <h4 class="titleFooter"> Menu</h4>
+          
+          <ul>
+          
+            <li><a href="index.html" title="Página Inícial">Home</a></li>
+            <li><a href="Sobre.html" title="Sobre ">Sobre a Empresa</a></li>
+            <li><a href="Serviços.html" title="Serviços">Serviços</a></li>
+            <li><a href="Contato.html" title="Fale Conosco">Fale Conosco</a></li>
+          
+          </ul>
+      
+      </div><!--Coluna Footer 1-->        
+      
+      <div class="colfooter">
+         
+         <h4 class="titleFooter">Contato</h4>
+         <p><i class="icon icon-mail"></i> atendimento@BoxSpots.com.br</p>
+         <p><i class="icon icon-phone"></i> 19 99999-9999</p>
+         <p><i class="icon icon-whatsapp"></i> 19 90000-0000</p>
+      
+      </div><!--Coluna Footer 2-->
+      
+      <div class="colfooter">
+         
+          <h4 class="titleFooter"> Redes Sociais</h4>
+          
+      
+      </form>
+      
+      </div><!--Coluna Footer 3-->
+      
+      <div class="clear"></div>
+  
+  </div><!--Contant-->
+  
+  <div class="main_footer_copy">
+      
+      <p class="m-b-footer">Box Sports - 2023, todos os direitos reservados.</p> 
+      <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#" title="Loop Nerd">Neo Squad</a></p>
+  </div>
+</footer>
+<!--Fecha Footer-->
+</body>
+
+</html>
